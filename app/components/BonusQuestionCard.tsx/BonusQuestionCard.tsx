@@ -7,7 +7,7 @@ const BonusQuestionCard = () => {
     const [isConfettiActive, setConfettiActive] = useState(false);
     const [fadeOut, setFadeOut] = useState(false);
 
-    const confettiStyles = {
+    const confettiStyles: React.CSSProperties = {
         position: 'fixed',
         top: 0,
         left: 0,
