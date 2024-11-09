@@ -1,5 +1,5 @@
 .quiz-container {
-    background: #ffffff;
+    width: 100%;
     border-radius: 4px;
   }
   
@@ -16,13 +16,8 @@
   }
   
   .quiz-container h2 {
-    font-size: 20px;
     font-weight: 500;
     margin: 0;
-  }
-
-  .results-container h2 {
-    font-size: 32px;
   }
   
   .quiz-container ul {

@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en-GB">
       <body className={`${inter.className} ${merriweather.variable}`}>
-        <main className="flex min-h-screen max-h-screen flex-col items-center justify-between py-12 px-5 bg-gray-100">
+        <main className="flex min-h-screen flex-col items-center gap-4 justify-between py-8 px-5 bg-gray-100 md:pt-12">
           <Header />
             {children}
           <Footer />

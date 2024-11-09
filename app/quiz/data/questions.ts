@@ -12,7 +12,7 @@ export const quiz = {
       answers: ['stringify()', 'parse()', 'convert()', 'None of the above'],
       type: 'MCQs',
       correctAnswer: 'stringify()',
-      image: 'assets/images/js-1.webp',
+      image: 'assets/images/js-7.webp',
     },
     {
       question: 'Which of the following keywords is used to define a variable in Javascript?',
@@ -34,7 +34,7 @@ export const quiz = {
       answers: ['const', 'var', 'let', 'constant'],
       type: 'MCQs',
       correctAnswer: 'const',
-      image: 'assets/images/js-4.webp',
+      image: 'assets/images/js-7.webp',
     },
     {
         question: 'What does the "typeof" operator in JavaScript do?',
@@ -46,14 +46,14 @@ export const quiz = {
         ],
         type: 'MCQs',
         correctAnswer: 'Returns the type of a variable or expression',
-        image: 'assets/images/js-5.webp',
+        image: 'assets/images/js-2.webp',
     },
     {
         question: 'What is the result of the expression 5 + "5" in JavaScript?',
         answers: ['10', '55', '5 + "5"', 'Error'],
         type: 'MCQs',
         correctAnswer: '55',
-        image: 'assets/images/js-6.webp',
+        image: 'assets/images/js-3.webp',
     },
     {
         question: 'Which of the following is NOT a JavaScript data type?',

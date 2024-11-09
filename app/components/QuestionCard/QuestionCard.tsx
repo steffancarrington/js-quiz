@@ -33,17 +33,17 @@ const QuestionCard = ({ questions, questionNext, questionPrev, onAnswerSelected,
                 <Image src={questions[activeQuestion].image} alt="image" width={100} height={100} quality={100} unoptimized className="h-full w-full object-cover" />
               </section>
 
-              <section className="px-10 py-10">
-                  <section className="mb-8">
+              <section className="p-5 md:px-10 md:py-10">
+                  <section className="mb-4 md:mb-8">
                     <span className="active-question-no">{addLeadingZero(activeQuestion + 1)}</span>
                     <span className="total-question">/{addLeadingZero(questionCount)}</span>
                   </section>
 
-                  <h2 className="mb-4 block text-2xl font-semibold font-heading leading-snug tracking-normal text-blue-gray-900 antialiased">
+                  <h2 className="mb-4 block text-lg font-semibold font-heading leading-snug tracking-normal text-blue-gray-900 antialiased md:text-xl lg:text-2xl">
                     {question}
                   </h2>
 
-                  <section id="answers" className="mb-12">
+                  <section id="answers" className="mb-8 md:mb-12">
                     <ul>
                       {answers.map((answer, index) => (
                         <li
@@ -56,10 +56,10 @@ const QuestionCard = ({ questions, questionNext, questionPrev, onAnswerSelected,
                     </ul>
                   </section>
 
-                  <section className="flex justify-between">
+                  <section className="flex flex-col justify-between gap-3 sm:flex-row">
                   <button
                   onClick={questionPrev} disabled={activeQuestion === 0}
-                    className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white bg-pink-500 border-pink-500 border-[1px] transition-all hover:text-pink-500 hover:bg-pink-500/5 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    className="flex select-none items-center gap-2 justify-center rounded-lg px-6 py-3 text-center align-middle font-sans text-xs font-bold uppercase text-white bg-pink-500 border-pink-500 border-[1px] transition-all hover:text-pink-500 hover:bg-pink-500/5 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button"
                   >
                       <svg
@@ -82,7 +82,7 @@ const QuestionCard = ({ questions, questionNext, questionPrev, onAnswerSelected,
 
                     <button
                     onClick={questionNext} disabled={selectedAnswerIndex === null}
-                    className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white bg-pink-500 border-pink-500 border-[1px] transition-all hover:text-pink-500 hover:bg-pink-500/5 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    className="flex select-none items-center gap-2 justify-center rounded-lg px-6 py-3 text-center align-middle font-sans text-xs font-bold uppercase text-white bg-pink-500 border-pink-500 border-[1px] transition-all hover:text-pink-500 hover:bg-pink-500/5 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button"
                     >
                         {activeQuestion === questionCount - 1 ? 'Submit Quiz' : 'Next Question'}
